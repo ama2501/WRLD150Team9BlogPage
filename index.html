@@ -8,8 +8,38 @@
     <!-- Add the Bootstrap CSS via the CDN (content delivery network) method -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-</head>
 
+    <!-- Add your custom CSS styles here -->
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 10rem;
+            padding: 0.5rem 0;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 0.25rem;
+        }
+        .dropdown-item {
+            display: block;
+            padding: 0.25rem 1.5rem;
+            clear: both;
+            font-weight: 400;
+            color: #212529;
+            text-align: inherit;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+        }
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+    </style>
+</head>
 
 <body>
 
@@ -34,7 +64,7 @@
 <section>
     <div class="bg-success text-white py-3 card text-center">
             <div class="container">
-              This blog highlights cultural events and activities suited for university students. Each event is selected for its affordability and easy accessibility, offering a blend of online talks and local fairs. These events provide enriching learning experiences and opportunities to connect with new cultures and people. Discover and enjoy different cultures right from your campus or home!
+              In this blog page, we have collected information on cultural events and activities that you could participate in, which are accessible online!
             </div>
         </div>
     </section>
@@ -142,16 +172,34 @@
                     <img class="card-img-top" src="https://lh3.googleusercontent.com/pw/AP1GczMgaQRbdxtA2DlvXYqlh2cpYmwhahJwBfi7FR1QzvLaW6ogTUCNlTP-1_Jln0LxlsCqxwCUFiTC8b4J3018hIOvY2wCu2Saoia9tMIZPE0Pbp-T-N8=w2400" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Cuisine of Different Cultures</h5>
-                        <p class="card-text">This online event series is a unique opportunity to explore a wide array of traditional dishes from around the world like shepherd’s pie, stuffed grape leaves, and borscht. Come to share in the rich culinary heritage that makes each culture special. Whether you’re a food enthusiast or simply curious about different cultures, this event will be an enriching experience. </p>
+                        <p class="card-text">This online event series is a unique opportunity to explore a wide array of traditional dishes from around the world like shepherd’s pie, stuffed grape leaves, and borscht. Come to share in the rich culinary heritage that makes each culture special. Whether you’re a food enthusiast or simply curious about different cultures, this event will be an enriching experience.</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Location: Online</li>
                         <li class="list-group-item">Price: $0-$10</li>
                         <li class="list-group-item">Date: June 15, 2024 11:00am-12:00pm & September 21, 2024 11:00am-12:00pm PDT</li>
                     </ul>
-                    <div class="card-body">
-                        <a class="btn btn-primary" href="https://www.eventbrite.com/o/atlantic-institute-8398436392" role="button">Learn More</a>
+                    <div class="col">
+        <div class="card-body">
+            <div class="text-left"> <!-- Wrap the button group with this div -->
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button">Cuisines</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://www.eventbrite.com/e/cuisine-of-different-cultures-borscht-ukrainian-beet-soup-tickets-901752434807?aff=ebdsoporgprofile">Borscht - Ukrainian Beet Soup</a>
+                        <a class="dropdown-item" href="https://www.eventbrite.com/e/cuisine-of-different-cultures-ground-turkey-shepard-pie-tickets-740976991127?aff=ebdsoporgprofile">Ground Turkey Shepard Pie</a>
+                        <a class="dropdown-item" href="https://www.eventbrite.com/e/cuisine-of-different-cultures-italian-amaretti-cookies-olive-oil-cake-tickets-772277963177?aff=ebdsoporgprofile">Italian Amaretti Cookies & Olive Oil Cake</a>
+                        <a class="dropdown-item" href="https://www.eventbrite.com/e/cuisine-of-different-cultures-southern-american-peach-cobbler-tickets-771675471107?aff=ebdsoporgprofile">Southern American Peach Cobbler</a>
+                        <a class="dropdown-item" href="https://www.eventbrite.com/e/cuisine-of-different-cultures-stuffed-grape-leaves-tickets-772288274017?aff=ebdsoporgprofile">Stuffed Grape Leaves</a>
+                        <a class="dropdown-item" href="https://www.eventbrite.com/e/cuisine-of-different-cultures-potluck-tickets-769802458877?aff=odcleoeventsincollection">Potluck</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.eventbrite.com/o/atlantic-institute-8398436392">Discover More</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                 </div>
             </div>
         </div>
